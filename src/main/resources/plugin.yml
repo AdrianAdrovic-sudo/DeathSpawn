@@ -1,0 +1,18 @@
+name: DeathSpawn
+version: '${version}'
+main: me.adrian.deathspawn.DeathSpawn
+api-version: '26.3'
+author: Adrian
+description: Admin-set respawn point for players without a bed.
+
+commands:
+  deathspawn:
+    description: Manage the death respawn point
+    usage: /<command> <set|clear|info|tp>
+    permission: deathspawn.admin
+    aliases: [ds]
+
+permissions:
+  deathspawn.admin:
+    description: Allows managing the death spawn
+    default: op
